@@ -1,9 +1,8 @@
 # Transaction Fee Estimation for Arbitrum from iExec Bellecour or Arbitrum chain 
 
-Python script to **estimate L1 and L2 gas fees on Arbitrum** for a given transaction observed in other chains.
-Support as input transactions from iExec Bellecour, Sepolia Arbitrum, Arbitrum, it is possible to add any EVM chain
+A Python script that estimates L1 and L2 gas fees on Arbitrum for a given transaction observed on other blockchains. It currently supports transactions from iExec Bellecour, Sepolia Arbitrum, and Arbitrum, with the flexibility to add support for any EVM-compatible chain.
 
-The script also converts fees into **USD** and, when analyzing a Bellecour transaction, **estimates what the fees would cost on Arbitrum**.
+The script also converts fees into **USD** and, when analyzing non Arbitrum transaction, **estimates what the fees would cost on Arbitrum**.
 
 More details:
 
@@ -41,8 +40,8 @@ python3 -m venv env
 source env/bin/activate
 ```
 
-When you're done, deactivate the virtual environment:
-
+###  Uninstall
+Reminder: when you're done with the tool, deactivate the virtual environment:
 ```bash
 deactivate
 ```
@@ -73,13 +72,7 @@ Analyze an Arbitrum transaction:
 ```bash
 python get_tx_fee_estimation.py 0x123abc... arbitrum
 ```
-Tips: Compare with estimated tx with with real Arbitrum fees
-
-
-Example : https://arbiscan.io/tx/0xabc123...
-
-[https://arbiscan.io/](https://arbiscan.io/)
-
+Tips: Useful to compare fee estimation with real Arbitrum fee. [https://arbiscan.io/](https://arbiscan.io/)
 
 ## **4. Example Output**
 
