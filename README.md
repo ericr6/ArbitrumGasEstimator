@@ -73,7 +73,7 @@ Analyze an Arbitrum transaction:
 ```bash
 python get_tx_fee_estimation.py 0x123abc... arbitrum
 ```
-Tips: Compare with tx info the real L1 and L2 fees
+Tips: Compare with estimated tx with with real Arbitrum fees
 
 
 Example : https://arbiscan.io/tx/0xabc123...
