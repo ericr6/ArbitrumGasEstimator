@@ -15,8 +15,8 @@ https://medium.com/offchainlabs/understanding-arbitrum-2-dimensional-fees-fd1d58
 - Fetch transaction details from **Arbitrum Sepolia**, **Arbitrum** or **iExec Bellecour**.
 - Calculate **L2 gas fees** from `gasUsed` and `gasPrice`.
 - Estimate **L1 gas usage** based on calldata size and estimate L1 fees.
-- Convert **L1 and L2 fees to USD** using the live ETH price from CoinGecko.
-- Provides a **cost estimation as if the transaction were on Arbitrum** (for transaction not coming from Arbitrum)
+- Convert **L1 and L2 fees to USD** using the live ETH price from public APIs.
+- Provides a **cost estimation as if the transaction were on Arbitrum**
 
 ---
 
